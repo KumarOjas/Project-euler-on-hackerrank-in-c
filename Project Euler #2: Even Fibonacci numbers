@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int t;
+    scanf("%d",&t);
+    for(int a0 = 0; a0 < t; a0++){
+        long n;
+        scanf("%ld",&n);
+        long long int f1 = 1,f2 = 2,f0 = 0, sum = 0;
+        while(f1 < n)
+        {
+            if(f1 % 2 == 0)
+            {
+                sum += f1;
+            }
+            f0 = f1 + f2;
+            f1 = f2;
+            f2 = f0;
+            
+        }
+        printf("%lld\n",sum);
+    }   return 0;
+}
