@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+int n,i,k;
+int N,sum;
+scanf("%d",&t);
+for(i=0;i<t;i++)
+    {
+    sum=0;
+    scanf("%d",&N);
+    for(k=1;k<N;k++)
+        {
+        if(k%3==0||k%5==0)
+        sum=sum+k;
+    }
+    printf("%d\n",sum);
+}
